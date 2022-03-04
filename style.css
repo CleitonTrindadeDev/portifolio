@@ -166,6 +166,7 @@ header{
     border-radius: 6px;
     cursor: pointer;
     animation: moveBanner 3s forwards;
+    transition: all 1s;
 
 }
 
@@ -280,7 +281,7 @@ header{
 }
 
 .sessao-conhecimentos{
-    background-color:;
+    
 }
 
 .sessao-header{
@@ -334,24 +335,23 @@ header{
 .projetos{
     display: flex;
     justify-content: space-evenly;
-    
-
+   
 }
 
 .card{
+    display: inline-block;
     width: 25rem;
     height: 17rem;
     position: relative;
+    cursor: pointer;
 }
 
-.card-img-wrapper{
-    
+.card-img-wrapper{    
     width: 100%;
     height:100%;
 }
 
 .card-img-wrapper img{
-    
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -364,9 +364,9 @@ header{
 }
 
 .card-info{
+    bottom: 0%;
     position: absolute;
-    bottom: 0;
-    padding: 2rem;
+    padding: 1rem;
     text-shadow: 0 0.1rem 0.3rem black;
     object-fit: cover;
     opacity: 0;
@@ -385,7 +385,7 @@ header{
     font-family: 'Kaushan Script', cursive ;
     color: var(--cor5);
     font-weight: bolder;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     object-fit: cover;
 }
 
@@ -393,9 +393,7 @@ header{
     font-family: 'Kaushan Script', cursive ;
     color:var(--cor5);
     font-weight: 400;
-    margin-bottom: 2rem;
-    
-
+    margin-bottom: 0.5rem;
 }
 
 .card-info button{
@@ -413,4 +411,117 @@ header{
     opacity: 1;
     visibility: visible;
     transition: all 3s;
+}
+
+.sessao-contato{
+    margin-top: 2rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contato-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.479);
+    
+}
+
+.contato-left{
+    width: 35%;
+    background-image:
+    linear-gradient(rgba(15,15,15,0.6),rgba(22,22,22,0.9)) , url(imagens/background-contato.jpg);
+    background-size: cover;
+    
+}
+
+.contato-right{
+    width: 65%;
+    background-color: var(--cor5);
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family:'Pacifico', cursive ; 
+    font-size: 3rem;
+    color: var(--cor2);
+}
+
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.field{
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-family:'Kaushan Script', cursive  ;
+    border-bottom: 1px solid var(--cor2);
+    height: 3rem;
+    outline: none;
+    margin: 2rem 0;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input-group textarea {
+    padding-top: 0.5rem;
+    font-size: 1em;
+    max-width: 25rem;
+    max-height: 5rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top:2.5rem;
+    font-family:'Kaushan Script', cursive  ;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.field:focus ~ label {
+    top:0;
+    font-size: 1rem;
+}
+
+.button-submit{
+    color: var(--cor5);
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-family: 'Pacifico',sans-serif;
+    background: linear-gradient(to right, var(--cor1) , var(--cor2));
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+    transition: all 1s;  
+}
+
+.button-submit:hover{
+    color: aqua;
+    padding: 0.6rem 1.1rem;
+}
+
+footer{
+    border-top: 1px solid #a0a0a027;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor3);
+    color: var(--cor4);
 }
