@@ -330,3 +330,87 @@ header{
     object-fit: cover;
     width: 100%;
 }
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.card{
+    width: 25rem;
+    height: 17rem;
+    position: relative;
+}
+
+.card-img-wrapper{
+    
+    width: 100%;
+    height:100%;
+}
+
+.card-img-wrapper img{
+    
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.card:hover .card-img-wrapper{
+    opacity: .8;
+    transition: all 3s;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.1rem 0.3rem black;
+    object-fit: cover;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card-info h2{
+    font-family: 'Pacifico', cursive ;
+    color: var(--cor4);
+    font-size: 2rem;
+    font-weight: 500;
+    object-fit: cover;
+}
+
+.card-info h3{
+    font-family: 'Kaushan Script', cursive ;
+    color: var(--cor5);
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+}
+
+.card-info p{
+    font-family: 'Kaushan Script', cursive ;
+    color:var(--cor5);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    
+
+}
+
+.card-info button{
+    color: var(--cor5);
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-family: 'Pacifico',sans-serif;
+    background: linear-gradient(to right, var(--cor1) , var(--cor2));
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card:hover .card-info {
+    opacity: 1;
+    visibility: visible;
+    transition: all 3s;
+}
