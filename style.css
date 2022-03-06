@@ -192,6 +192,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 2s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.877);
 }
 
 .show-menu .sidebar{
@@ -249,57 +250,48 @@ header{
 }
 
 .sessao-sobre-mim{
-    border: 1px solid black;
     width: 80%;
     padding: 2rem;
     margin: auto;
     height: 20rem;
-    display: flex;  
+    margin-bottom: 5rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
 }
 
-@media screen and (min-width: 576px)
-.sessao-sobre-mim {
-    grid-template-columns: repeat(2, 1fr);
-    align-items:center;
-    text-align:center;
-}
-.sessao-sobre-mim h1{
-    display: flex;
+/*.sessao-sobre-mim h1{
+    justify-content: flex-end;
+    position: absolute;
+    display: inline-block;
     font-family:'Kaushan Script', cursive ;
     font-size: 3rem;
     color: var(--cor2);
     border-bottom: solid 3px var(--cor2);
     margin-bottom: 1.5rem;
-}
+}*/
 .sobre-mim-img{
-    width: 100%;
     position: relative;
-    display: flex;
-    
+    text-align: center;   
 }
 .sobre-mim-img img{
     padding: 2rem;
-    position: absolute;
-    object-fit: cover;
-    max-width: 80%;
-    max-height: 80%;
-    align-items: center;
+    max-width: 50%;
+    max-height: 50%; 
     justify-content: center;
-    
-     
+    align-items: center;
+      
 }
 
 .sobre-mim{
-    width: 50%;
     text-align: center; 
 }
-
-
 
 .sobre-mim h2{
     font-family:'Kaushan Script', cursive ;
     font-size: 2rem;
-    color: var(--cor2);
+    color: var(--cor2); 
 }
 
 .sobre-mim p {
@@ -309,40 +301,53 @@ header{
 }
 
 .conhecimentos{
+    
+    width: 80%;
+    margin: auto;
     display:grid;
-    grid-template-columns: repeat(16,1fr);
+    grid-template-columns: repeat(16,2fr);
     grid-template-rows: repeat(6,6rem);
     gap: 2.5rem;
 }
 
+.conhecimento{
+    overflow: hidden;
+    text-align: center;
+}
 .conhecimento:nth-child(1){
-    grid-column: 4/7;
+    
+    grid-column: 4/8;
     grid-row:1/3;
+   
 }
 
 .conhecimento:nth-child(2){
-    grid-column: 3/6;
+    grid-column: 1/5;
     grid-row:3/5;
+   
 }
 
 .conhecimento:nth-child(3){
-    grid-column: 4/7;
+    grid-column: 6/11;
     grid-row:5/-1;
+   
 }
 
 .conhecimento:nth-child(4){
-    grid-column: 11/14;
+    grid-column: 10/14;
     grid-row:1/3;
+    
 }
 
 .conhecimento:nth-child(5){
-    grid-column: 12/15;
+    grid-column: 13/17;
     grid-row:3/5;
+    
 }
 
 .sessao-conhecimentos{
+    margin-bottom: 4rem;
     font-family:'Kaushan Script', cursive ;
-    font-size: 2rem;
     padding-left: 1rem;
 }
 
@@ -358,6 +363,7 @@ header{
     color: var(--cor2);
     border-bottom: solid 3px var(--cor2);
     margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
 
 }
 
@@ -372,6 +378,7 @@ header{
 }
 
 .conhecimento-header h3 {
+    
     font-family:'Kaushan Script', cursive ;
     font-size: 2rem;
     padding-left: 1rem;
@@ -380,12 +387,14 @@ header{
 .conhecimento-text{
     font-family:'Kaushan Script', cursive;
     color: var(--cor1);
-    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    
 }
 
 .conhecimento-img-wrapper{
-    grid-column: 7/11;
-    grid-row:2/6 ;
+    grid-column: 6/12;
+    grid-row:3/6 ;
     width: 100%;
 }
 
@@ -395,6 +404,7 @@ header{
 }
 
 .projetos{
+    
     display: flex;
     justify-content: space-evenly;
    
