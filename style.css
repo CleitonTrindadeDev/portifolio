@@ -101,6 +101,8 @@ header{
     height: 100vh;
     overflow: hidden;
     position: relative;
+    max-width: 100%;
+    min-width: 320px;
 }
 
 .img-wrapper{
@@ -159,7 +161,6 @@ header{
 .banner button {
     color: var(--cor5);
     padding: 1rem 2rem;
-    text-transform: uppercase;
     font-family: 'Pacifico',sans-serif;
     background: linear-gradient(to right, var(--cor1) , var(--cor2));
     border: none;
@@ -167,13 +168,17 @@ header{
     cursor: pointer;
     animation: moveBanner 3s forwards;
     transition: all 1s;
-
+}
+.banner a {
+    color: var(--cor5);
+    transition: all 1s;
+    font-family: 'Pacifico',sans-serif;
 }
 
-.banner  button:hover{
+.banner  button:hover, a:hover{
     color: aqua;
-    padding: 1.1rem 2.1rem;
 }
+
 
 @keyframes moveBanner {
     0%{
@@ -251,6 +256,8 @@ header{
 
 .sessao-sobre-mim{
     width: 80%;
+    max-width: 80%;
+    min-width: 320px;
     padding: 2rem;
     margin: auto;
     height: 20rem;
