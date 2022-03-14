@@ -324,6 +324,7 @@ header{
     width: 100px;
     text-align: center;
     box-shadow: 2px 2px 8px #0000008c;
+    background: var(--cor3);
     border-radius: 5px;
     padding: 17px;
    
