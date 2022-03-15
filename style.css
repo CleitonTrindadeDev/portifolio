@@ -326,13 +326,17 @@ header{
     box-shadow: 2px 2px 8px #0000008c;
     background: var(--cor3);
     border-radius: 5px;
-    padding: 17px;
-   
+    padding: 17px; 
+    cursor: pointer; 
+    transition: 2s;
+}
+
+.conhecimento:hover{
+    box-shadow: 0px 0px 42px #0062d3;
 }
 
 .sessao-conhecimentos{
-    background-color: var(--cor2);
-    
+    background-color: var(--cor2); 
     font-family:'Kaushan Script', cursive ;
     padding: 50px;
 }
@@ -354,7 +358,7 @@ header{
 }
 
 .conhecimento-header i {
-    font-size: 4.5rem;  
+    font-size: 4.5rem;
 }
 
 #html-icon{
@@ -379,7 +383,7 @@ header{
 }
 .projetos{
     margin: 0 auto;
-    width: 95%;
+    width: 80%;
     background-color: var(--cor3);
     justify-content:space-evenly;
     height: 395px;
