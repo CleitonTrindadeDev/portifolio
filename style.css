@@ -284,7 +284,8 @@ header{
     background-image:url(imagens/rosto1.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size:250px;
+    background-position: bottom;
     margin-bottom: 20px; 
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.452);
 }
