@@ -281,11 +281,11 @@ header{
     height: 320px;
     background-color:var(--cor4);
     border-radius: 50%;
-    background-image:url(imagens/rosto1.png);
+    background-image:url(imagens/rosto-pq.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:250px;
-    background-position:bottom ;
+    background-size:360px;
+    background-position:bottom;
     margin-bottom: 20px; 
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.452);
 }
