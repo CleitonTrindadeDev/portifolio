@@ -373,6 +373,9 @@ header{
  #git-icon{
     color:white ;
  }
+ #bt-icon{
+     color: #8812FB;
+ }
 
 .conhecimento-header h3 { 
     font-family:'Kaushan Script', cursive ;
@@ -419,6 +422,7 @@ header{
 
 
 .card{
+    
     width: 500px;
     height: 90%;
     position: relative;
@@ -427,6 +431,7 @@ header{
 }
 
 .card-img-wrapper{ 
+    
     width: 100%;
     height:100%;
     padding: 20px;
