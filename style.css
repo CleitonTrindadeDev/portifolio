@@ -378,7 +378,10 @@ header{
  #bt-icon{
      color: #8812FB;
  }
-
+ #vue-icon{
+     color: #42D392;
+ }
+ 
  #jq-icon{
      color:#669CC9;
  }
