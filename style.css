@@ -571,7 +571,10 @@ header{
 
 .input-group{
     position: relative;
+    left: 10px;
+    
 }
+
 
 .input-group textarea {
     padding-top: 0.5rem;
